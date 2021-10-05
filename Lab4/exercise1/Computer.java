@@ -32,7 +32,7 @@ public class Computer {
 
   //  }
 
-    public String getManufacturer() {
+     String getManufacturer() {
         return manufacturer;
     }
 

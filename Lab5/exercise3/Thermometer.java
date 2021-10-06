@@ -7,8 +7,8 @@ public class Thermometer {
 
     public Thermometer() {
         currentTemp = 0;
-        maxTemp = Integer.MAX_VALUE;
-        minTemp = Integer.MIN_VALUE;
+        maxTemp = Integer.MIN_VALUE;
+        minTemp = Integer.MAX_VALUE;
 
     }
 
@@ -47,11 +47,23 @@ public class Thermometer {
     }
 
     public void setTemperature(int currentTemp) {
+        int max,min;
+        min= getMinTemp();
+        max = getMaxTemp();
+        if (currentTemp < min) {
+            min = currentTemp;
+            setMinTemp(min);
+        }
+        if (currentTemp > max) {
+            max = currentTemp;
+        setMaxTemp(max);
+        }
+
         this.currentTemp = currentTemp;
 
     }
 
-    private void updateMaxMinTemp() {
+    private void updateMaxMinTemp(){
 
     }
 }

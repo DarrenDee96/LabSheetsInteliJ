@@ -12,7 +12,7 @@ public class TestBook {
 
         Computer c1 = new Computer();
 
-        System.out.print(c1.getManufacturer());
+        //System.out.print(c1.getManufacturer());
 
         JTextArea textArea = new JTextArea();
         Font font = new Font("monospaced",Font.PLAIN,12);

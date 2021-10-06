@@ -16,7 +16,9 @@ public class BankAccount {
 
     //Multi argument
     public BankAccount(String owner, int number, double interestRate) {
-
+            this.owner = owner;
+            this.number = number;
+            BankAccount.interestRate = interestRate;
     }
 
 
@@ -47,7 +49,7 @@ public class BankAccount {
 
     public String toString() {
 
-        return "";
+        return "Owner : " + getOwner() + "  Account Number: "+ getNumber() + "  Interest Rate: "+ BankAccount.interestRate;
     }
 
 }

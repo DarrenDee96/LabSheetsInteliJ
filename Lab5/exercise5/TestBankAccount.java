@@ -1,4 +1,5 @@
-package Lab5.exercise4;
+package Lab5.exercise5;
+
 import javax.swing.*;
 
 public class TestBankAccount {

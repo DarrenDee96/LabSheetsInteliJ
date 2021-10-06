@@ -1,23 +1,23 @@
-package Lab5.exercise4;
+package Lab5.exercise5;
 
 public class BankAccount {
 
     private String owner;
-    private int number;
+    private static int number;
     private static double interestRate;
 
     //No argument
     public BankAccount() {
         owner = "Owner Not Available";
-        number = 0;
         interestRate =0;
+       incrementCount();
     }
 
 
     //Multi argument
     public BankAccount(String owner, int number, double interestRate) {
             this.owner = owner;
-            this.number = number;
+            incrementCount();
             BankAccount.interestRate = interestRate;
     }
 
@@ -51,6 +51,9 @@ public class BankAccount {
     public String toString() {
 
         return "Owner : " + getOwner() + "  Account Number: "+ getNumber() + "  Interest Rate: "+ BankAccount.interestRate;
+    }
+    private static void incrementCount(){
+        number++;
     }
 
 }

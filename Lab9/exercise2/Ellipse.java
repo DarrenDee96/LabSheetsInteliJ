@@ -28,7 +28,7 @@ public class Ellipse extends Shape{
             this.majorAxis = majorAxis;
         }
         else
-            majorAxis=0;
+            this.majorAxis=0;
 
         }
 
@@ -42,17 +42,22 @@ public class Ellipse extends Shape{
             this.minorAxis = minorAxis;
         }
         else
-            minorAxis=0;
+            this.minorAxis=0;
 
     }
 
     public double area() {
 
-        return Math.PI*((majorAxis)*(minorAxis));
+        return Math.PI*getMajorAxis()*getMinorAxis();
     }
 
     public double perimeter() {
 
         return 2*Math.PI*Math.sqrt((getMajorAxis()*getMajorAxis()+getMinorAxis()*getMinorAxis())/2);
+    }
+
+    @Override
+    public String toString() {
+        return "Shape type: " + type + "\nArea: " + area()+ "\nPerimeter: " + perimeter();
     }
 }

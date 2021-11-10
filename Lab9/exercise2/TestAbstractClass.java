@@ -32,7 +32,10 @@ public class TestAbstractClass {
              System.out.println("Details of the first Triangle: \n" + triangle2);
 
              Ellipse ellipse1 = new Ellipse();
-             System.out.println();
+             System.out.println("Details of the first Ellipse: \n" + ellipse1);
+
+             Ellipse ellipse2 = new Ellipse(15,10);
+             System.out.println("Details fo the second Ellipse: \n" + ellipse2);
 
 
 
@@ -41,7 +44,7 @@ public class TestAbstractClass {
              //This is legal since a Circle is-a Shape and a Rectangle is-a Shape (also Triangle and Ellipse)
              //A Shape reference can reference an object that subclasses Shape
 
-             Shape[] allShapes = {circle1,circle2,rectangle1,rectangle2};
+             Shape[] allShapes = {circle1,circle2,rectangle1,rectangle2, triangle1, triangle2, ellipse1,ellipse2};
 
              //Looping through the array of Shape references to display the state of the
              //various shapes it contains, using polymorphism and dynamic method binding

@@ -23,5 +23,11 @@ public class TestInterface {
 			System.out.println("\n\nTesting the PostGraduate multi-arg constructor: ");
 			PostGraduate p2 = new PostGraduate("Eddie Murphy", "USA", new GregorianCalendar(1961,7,10), "t234567", "Comedy", "Frank Carson");
 			System.out.println(p2);
+
+
+		 System.out.println("\n\nTesting the Permanent ");
+		 PermanentLecturer p5 = new PermanentLecturer("Darren" , "Jerlane" , new GregorianCalendar(1996 , 8 , 02) , "1anda 4" , new String[]{"Economics 101\",\"Media Presentation\",\"Political Debate"}, new GregorianCalendar(2003,5,12),"50 pensin" , "full time" );
+		 System.out.println(p5);
+
      	}	   
 }
